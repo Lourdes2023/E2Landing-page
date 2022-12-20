@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Rubik+80s+Fade&display=swap");
+
+:root {
+  --green-title: #49beb7;
+  --green-zuni: #008996;
+  --red-white: #d7d7d8;
+  --bacground-green: #e8ffe8;
+  --text--blueblack: #071e3d;
+  --botton-blue: #0389ff;
+  --text-brow: #4d4f53;
+  /* text */
+
+  --text-blue-air: #0085ad;
+  --text-blue-air2: #005670;
+  /* texto decoration */
+  --green-apple: #bfca02;
+  --green-lemon: #84bd00;
+}
+/* header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "chakra petch";
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/*header*/
+header {
+  display: flex;
+  background: linear-gradient(10deg, #d7d7d8, #49beb7);
+  width: 100%;
+  height: 70px;
+  padding: 10px 0px 10px 0px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+.logo {
+  height: 70px;
+}
+.navbar,
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  gap: 150px;
+}
+.navbar-list {
+  gap: 40px;
+}
+.navbar-list a {
+  color: var(--text-blue-air2);
+  font-size: 17;
+  font-weight: 700;
+}
+.navbar-list li:first-child > a {
+  color: var(--green-zuni);
+  font-weight: 900px;
+}
