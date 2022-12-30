@@ -1,44 +1,172 @@
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Roboto:ital,wght@0,100;0,700;1,300;1,400;1,500&family=Rubik+80s+Fade&display=swap"):
-  root {
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Roboto:ital,wght@0,100;0,700;1,300;1,400;1,500&family=Rubik+80s+Fade&display=swap");
+
+:root {
   --green-title: #49beb7;
   --green-zuni: #008996;
   --red-white: #d7d7d8;
   --bacground-green: #e8ffe8;
-  --text--blueblack: #071e3d;
-  --botton-blue: #0389ff;
-  --text-brow: #4d4f53;
+  --text--blueblack: #414c59;
+  --botton-blue: #1c75cf;
   /* text */
-
+  --text-grey: lightslategray;
   --text-blue-air: #0085ad;
   --text-blue-air2: #005670;
+
   /* texto decoration */
   --green-apple: #bfca02;
   --green-lemon: #84bd00;
 }
-/* header */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  background: rgb(231, 231, 231);
 }
 
 /*header*/
 .header {
   display: flex;
   width: 100%;
-  height: 50px;
+  height: 100px;
   padding: 0px 50px;
-  box-shadow: rgba(1, 45, 63, 0.2) 0px 8px 24px;
+  box-shadow: rgba(58, 68, 72, 0.944) 0px 8px 24px;
   align-items: center;
   justify-content: space-between;
 }
 
 .header img {
   height: 100%;
+  border-radius: 25px;
 }
+
 .navbar ul {
   display: flex;
-  gap: 80px;
   list-style: none;
+  gap: 100px;
+}
+.navbar a {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(146, 50, 69);
+}
+
+/* main */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+#hero {
+  height: 700px;
+  width: 90%;
+  margin: 30px 70px 0px 80px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  margin: 200px 100px 0px 0px;
+  background: white;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  font-size: 20px;
+  flex-direction: column;
+}
+.hero-info h1 {
+  background: white;
+  color: var(--text--blueblack);
+  font-weight: 800;
+  font-size: 80px;
+  min-width: 500px;
+}
+.hero-info p {
+  display: flex;
+  background: white;
+  text-shadow: rgba(236, 238, 243, 0.995) 2px 0px 0px;
+  color: var(--text--blueblack);
+  font-weight: 100px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.hero-car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  border-radius: 7px;
+}
+.hero-car img {
+  margin: 25px;
+  height: 250px;
+  width: 350px;
+  border-radius: 20px;
+}
+
+.hero-info-button {
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.urnas {
+  text-shadow: rgba(186, 192, 220, 0.9) 2px 0px 0px;
+  display: flex;
+  box-sizing: border-box;
+  background-color: var(--text--blueblack);
+  color: var(--bacground-green);
+  border-radius: 50px;
+  padding: 5px;
+  width: 28%;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 23px;
+}
+.servicios {
+  background: white;
+  text-shadow: rgba(186, 192, 220, 0.9) 2px 0px 0px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 5px;
+  border: solid;
+  width: 28%;
+  border-radius: 50px;
+  color: var(--text--blueblack);
+  font-size: 23px;
+  font-weight: 600;
+  justify-content: center;
+}
+#info {
+  height: 400px;
+  width: 90%;
+  background: white;
+  margin: 2px 70px 1px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-car p {
+  box-sizing: border-box;
+  padding: 50px 100px;
+  display: flex;
+  background: white;
+  text-shadow: rgba(236, 238, 243, 0.995) 2px 0px 0px;
+  color: var(--text--blueblack);
+  font-weight: 500;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  width: 1200px;
 }
