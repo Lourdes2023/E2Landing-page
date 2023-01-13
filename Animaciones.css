@@ -1,0 +1,52 @@
+/* trabajar nuestras animaciones */
+
+/* agregamos el scrool behavior smoot para que sea más suave la navagación */
+
+/* scroll padding top para cuando se clikea en el link tome en cuenta la altura del navbar y no tape parte de la seccion */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+}
+
+.overlay {
+  position: absolute;
+  top: 87px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: rgba(31, 38, 135, 0.37) 0 8px 32px 0;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+
+#menu-toggle:checked ~ .overlay {
+  display: block;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.hero-info h1 {
+  animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
+#hero img {
+  opacity: 0;
+  animation: fade 0.7s ease-in forwards, slide-up 0.9s ease-in-out;
+}

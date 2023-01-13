@@ -6,29 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Urnas-Funerarias</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <link rel="stylesheet" href="./imagenes/Animaciones.css" />
   </head>
   <link
     class="fonts"
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Rubik+80s+Fade&display=swap"
   />
+
   <body>
     <header class="header">
-      <img
-        src="https://lirp.cdn-website.com/bd769fed/dms3rep/multi/opt/logo-1920w.jpg"
-        alt="Logo Ratti"
-      />
+      <img src="./imagenes/logoratti.png" alt="Logo Ratti" />
       <nav class="navbar">
-        <ul>
+        <!-- Menu Hambuerguesa -->
+
+        <label for="menu-toggle" class="menu-label">
+          <img src="./imagenes/icon/icone-menu-vert.png" alt="menu" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+
+        <ul class="navbar-list">
           <li><a class="navbar-link" href="#hero">Inicio</a></li>
           <li><a class="navbar-link" href="#about">Nosotros</a></li>
-          <li><a class="navbar-link" href="contact">Contactanos</a></li>
+          <li><a class="navbar-link" href="#contact">Contactanos</a></li>
         </ul>
+        <div class="overlay"></div>
       </nav>
     </header>
 
     <!-- main -->
     <main>
+      <!-- hero -->
+
       <section id="hero">
         <div class="hero-info">
           <h1>Urnas Ratti</h1>
@@ -36,28 +46,134 @@
             Trasforma tu ceremonia de despedida en un homenaje a la vida de tu
             ser querido.
           </p>
-          <div class="hero-info-button">
+          <div class="button-container">
             <a class="urnas" href="#">Urnas</a>
             <a class="servicios" href="#">Servicios </a>
           </div>
         </div>
 
-        <div class="hero-car">
-          <img src="./imagenes/Urnas biodegradables.jpg" alt="Ofrenda" />
+        <img
+          src="./imagenes/Urnas biodegradables.jpg"
+          alt="Urna"
+          class="hero-img"
+        />
+      </section>
+
+      <!-- info -->
+
+      <section id="about">
+        <p>
+          Nuestra empresa ofrece a nuestros clientes un servicio de urnas con
+          diseños exclusivos especialmente pensado para ese momento tan difícil
+          teniendo en cuenta la necesidad de los familiares de despedir al ser
+          querido, dándole una solución con respeto y seriedad.
+        </p>
+      </section>
+
+      <!-- Cards -->
+
+      <section id="cards">
+        <div class="cards-info">
+          <h2>Personalización de Servicios</h2>
+          <p>
+            Personal que trabaja con la vocación y responsabilidad que requiere
+            la labor social que tenemos a nuestro cargo brindando a las familias
+            todos los elementos necesarios para despedir a un ser querido..
+          </p>
+        </div>
+        <div class="cards-container">
+          <div class="benefic-car">
+            <img src="./imagenes/icon/urna3.png" alt="urna" />
+            <h3>Cremaciones</h3>
+            <p>
+              Es la reducción del cuerpo a cenizas para darle un descanso eterno
+            </p>
+          </div>
+          <div class="benefic-car">
+            <img src="./imagenes/icon/reducciones4.png" alt="caja" />
+            <h3>Reducciones</h3>
+            <p>Es el proceso de convertir el féretro en cenizas</p>
+          </div>
+          <div class="benefic-car">
+            <img src="./imagenes/icon/icon-casa.png" alt="casa velatoria" />
+            <h3>Salas Velatorias</h3>
+            <p>En distintos puntos de Buenos Aires</p>
+          </div>
         </div>
       </section>
 
-      <section id="info">
-        <div class="info-car">
-          <p>
-            Nuestra empresa ofrece a nuestros clientes un servicio de urnas con
-            diseños exclusivos especialmente pensado para ese momento tan
-            difícil teniendo en cuenta la necesidad de los familiares de
-            despedir al ser querido, dándole una solución con respeto y
-            seriedad.
-          </p>
+      <section id="contact">
+        <div class="contac-info">
+          <h2>¡Contáctenos para asesorarlo!</h2>
+          <div class="contact-container">
+            <!-- Datos de contacto -->
+            <div class="contact-data">
+              <h3>Contacto</h3>
+              <div class="contact-info-data">
+                <img src="./imagenes/icon/icon-what.png" alt="what" />
+                <p>+54 9 11 4025-4010</p>
+              </div>
+
+              <div class="contact-info-data">
+                <img src="./imagenes/icon/icon-mail.png" alt="correo" />
+                <span>info@cocheriaratti.com.ar</span>
+              </div>
+
+              <div class="contact-info-data">
+                <img
+                  src="./imagenes/icon/room_black_24dp.svg"
+                  alt="ubicación"
+                />
+                <p>
+                  Int. Carlos Ratti 1402 <span>Ituzaingó, Buenos Aires</span>
+                </p>
+              </div>
+            </div>
+
+            <!--Datos de medios de pagos-->
+            <div class="bussines-data">
+              <h3>Atención las 24 horas</h3>
+              <div class="contact-info-data">
+                <img src="./imagenes/icon/efectivo.png" alt="efectivo" />
+                <p>Aceptamos efectivo</p>
+              </div>
+              <div class="contact-info-data">
+                <img src="./imagenes/icon/imagesbanco.png" alt="banco" />
+                <p>transferencias bancarias y cheques</p>
+              </div>
+              <div class="contact-info-data">
+                <img
+                  src="./imagenes/icon/tarjetas.png"
+                  alt="
+              tarjetas"
+                />
+                <p>Todas las tarjetas</p>
+              </div>
+            </div>
+          </div>
+          <div class="redes-botton">
+            <img src="./imagenes/icon/icon-insta.png" alt="insta" />
+            <img src="./imagenes/icon/social_facebook_box_.png " alt="" />
+          </div>
+        </div>
+
+        <div class="map-interactivo">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1160.4193578707275!2d-58.68547275469463!3d-34.65062188668129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfb1eaf9801f%3A0x3dffe6d8b9484e69!2sCocheria%20Ratti!5e0!3m2!1ses-419!2sar!4v1673545869285!5m2!1ses-419!2sar"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="logo-footer">
+        <img src="./imagenes/Cocherialogo.png" alt="logo" />
+      </div>
+    </footer>
   </body>
 </html>
