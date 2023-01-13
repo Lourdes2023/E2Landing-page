@@ -50,3 +50,9 @@ html {
   opacity: 0;
   animation: fade 0.7s ease-in forwards, slide-up 0.9s ease-in-out;
 }
+#about p {
+  animation: fade 1s ease-out, slide-up 1.5s ease-in-out;
+}
+#cards {
+  animation: fade 1.3s ease-in forwards, slide-up 1.5s ease-in-out;
+}
