@@ -46,6 +46,12 @@ html {
 .hero-info h1 {
   animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
 }
+.hero-info p {
+  animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
+.button-container {
+  animation: fade 1s ease-in, slide-up 1.3s ease-in-out;
+}
 #hero img {
   opacity: 0;
   animation: fade 0.7s ease-in forwards, slide-up 0.9s ease-in-out;
